@@ -15,10 +15,4 @@ app.get("/", (req, res) => {
 
 app.use("/", routers)
 
-if (env !== "test") {
-  app.listen(PORT, () => {
-    console.log("App running on port: ", PORT);
-  })
-}
-
 module.exports = app
